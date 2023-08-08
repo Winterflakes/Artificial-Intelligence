@@ -45,18 +45,18 @@ def displayPathtoPrincess(n,grid):
             
     x = princess[0] - bot[0]
     y = princess[1] - bot[1]
-    if x > 0:
-        for i in range(x):
-            print("RIGHT")
-    if x < 0:
-        for i in range(-1*x):
-            print("LEFT")
     if y > 0:
         for i in range(y):
             print("DOWN")
     if y < 0:
         for i in range(-1*y):
             print("UP")
+    if x > 0:
+        for i in range(x):
+            print("RIGHT")
+    if x < 0:
+        for i in range(-1*x):
+            print("LEFT")
 
 m = int(input())
 grid = [] 

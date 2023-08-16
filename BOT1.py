@@ -42,16 +42,16 @@ def displayPathtoPrincess(n,grid):
 
     while(bot_column!=princess_column and bot_row!=princess_row):
         if(bot_row<princess_row):
-            print("DOWN\n")
+            print("DOWN")
             bot_row+=1
         if(bot_row>princess_row):
-            print("UP\n")
+            print("UP")
             bot_row-=1
         if(bot_column<princess_column):
-            print("RIGHT\n")
+            print("RIGHT")
             bot_column+=1
         if(bot_column>princess_column):
-            print("LEFT\n")
+            print("LEFT")
             bot_column-=1
             
 

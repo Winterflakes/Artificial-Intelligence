@@ -128,13 +128,17 @@ class Puzzle:
 					frontier.add(child)
 
 
-start = np.array([[2,0,4,9], [1,5,6,10], [7,8,3,11], [12,13,14,15]])
-goal = np.array([[2,4,6,9], [1,0,5,10], [7,8,3,11], [12,13,14,15]])
+# start = np.array([[2,0,4,9], [1,5,6,10], [7,8,3,11], [12,13,14,15]])
+# goal = np.array([[2,4,6,9], [1,0,5,10], [7,8,3,11], [12,13,14,15]])
+# startIndex = (0, 1)
+# goalIndex = (1, 1)
 
-
-startIndex = (0, 1)
-goalIndex = (1, 1)
-
+start = np.array([[2,1,3,4], [5,6,7,8], [9,10,11,12], [13,14,15,0]])
+goal = np.array([[1,2,3,4], [5,6,7,8], [9,10,11,12], [13,14,15,0]])
+startIndex = (3,3)
+goalIndex = (3,3)
+if(start.all!=goal.all) and (startIndex==goalIndex):
+	print("Solution is unreachable")
 
 p = Puzzle(start, startIndex, goal, goalIndex)
 p.solve()

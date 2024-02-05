@@ -62,19 +62,9 @@ def a_star_search(initial_state, goal_state):
     return None, None  # No solution found
 
 if __name__ == "__main__":
-    initial_state = [
-        [1, 2, 3, 4],
-        [5, 6, 7, 8],
-        [9, 10, 11, 12],
-        [13, 14, 15, 0]
-    ]
+    initial_state = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,0]
 
-    goal_state = [
-        [1, 2, 3, 4],
-        [5, 6, 7, 8],
-        [9, 10, 11, 12],
-        [13, 14, 15, 0]
-    ]
+    goal_state = [1,2,3,4,5,6,7,8,9,10,11,12,13,0,15,14]
 
     path, depth = a_star_search(initial_state, goal_state)
 

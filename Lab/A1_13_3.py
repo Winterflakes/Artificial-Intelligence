@@ -1,4 +1,4 @@
-# AIM : Write program to implement 15 puzzle problem using BFS
+# AIM 3 : Write program to implement 15 puzzle problem using BFS
 
 import sys
 import numpy as np
